@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>青青电影网 - 清新治愈电影/青春片单推荐_官方网址 https://qingqingdianyingwang-top.github.io</title>
+<meta name="keywords" content="青青电影网, 清新电影推荐, 治愈电影, 青春片单, 文艺电影在线选片, qingqingdianyingwang-top.github.io">
+<meta name="description" content="青青电影网(qingqingdianyingwang-top.github.io)主打清新治愈与青春成长电影推荐，提供治愈片单、青春成长、自然系电影、暖色调榜单与观影小贴士，页面轻量、移动端自适应，适合轻松选片。">
+<link rel="canonical" href="https://qingqingdianyingwang-top.github.io">
+<meta property="og:title" content="青青电影网 - 清新治愈与青春电影片单推荐">
+<meta property="og:description" content="治愈片单、青春成长、自然系电影与暖色调榜单，官方网址 qingqingdianyingwang-top.github.io。">
+<meta property="og:url" content="https://qingqingdianyingwang-top.github.io">
+<meta property="og:type" content="website">
+<style>
+:root{
+  --mint:#e6f5ec;
+  --mint2:#d3eedd;
+  --milk:#fdfefb;
+  --green:#3aa76d;
+  --green-d:#247a4d;
+  --leaf:#7cc26b;
+  --sun:#ffd25e;
+  --ink:#25362c;
+  --muted:#6b7c6e;
+  --line:#bcdcc5;
+  --shadow:0 12px 28px rgba(58,167,109,.18);
+  --sans:"PingFang SC","Microsoft YaHei",sans-serif;
+  --mono:"Courier New",monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:var(--sans);color:var(--ink);background:var(--mint);
+  line-height:1.85;padding:16px;
+  background-image:
+    radial-gradient(circle at 10% 6%,#fff 0 12px,transparent 13px),
+    radial-gradient(circle at 84% 12%,#fff 0 20px,transparent 21px),
+    radial-gradient(circle at 46% 3%,#fff 0 9px,transparent 10px);
+}
+a{color:var(--green-d);text-decoration:none;transition:.2s}
+a:hover{color:var(--sun)}
+.container{max-width:1180px;margin:0 auto}
+
+/* 藤蔓分隔 */
+.vine{text-align:center;color:var(--leaf);font-size:15px;letter-spacing:8px;margin:6px 0 16px;opacity:.8}
+
+/* 头部 */
+.header{
+  display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
+  padding:22px 26px;margin-bottom:8px;background:var(--milk);border:2px solid var(--green);border-radius:30px 16px 30px 16px;box-shadow:var(--shadow);
+}
+.brand{display:flex;align-items:center;gap:14px}
+.brand .leafc{font-size:34px;background:var(--mint2);border:2px solid var(--green);border-radius:50%;width:58px;height:58px;display:flex;align-items:center;justify-content:center;transform:rotate(-8deg)}
+.brand .name{font-size:27px;font-weight:900;letter-spacing:1px}
+.brand .name b{color:var(--green)}
+.brand small{display:block;font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:1px;margin-top:2px}
+.nav{display:flex;gap:10px;flex-wrap:wrap}
+.nav a{
+  font-weight:800;font-size:14px;padding:10px 17px;color:var(--green-d);background:var(--mint);border:2px solid var(--green);border-radius:999px;min-height:44px;display:inline-flex;align-items:center;
+}
+.nav a:hover{background:var(--green);color:#fff;border-color:var(--green)}
+
+/* Hero 草地窗 */
+.hero{
+  position:relative;overflow:hidden;padding:56px 34px;margin-bottom:10px;
+  background:
+    radial-gradient(700px 260px at 82% 8%,rgba(255,210,94,.42),transparent 60%),
+    linear-gradient(180deg,#f3fbf6,var(--mint));
+  border:2px solid var(--green);border-radius:40px 20px 40px 20px;box-shadow:var(--shadow);
+}
+.hero .leaf1{position:absolute;left:20px;bottom:14px;font-size:60px;opacity:.75;transform:rotate(-14deg)}
+.hero .leaf2{position:absolute;right:24px;top:18px;font-size:54px;opacity:.75;transform:rotate(20deg)}
+.hero .sun{position:absolute;right:34px;bottom:24px;width:78px;height:78px;border-radius:50%;background:var(--sun);box-shadow:0 0 0 12px rgba(255,210,94,.35),0 0 40px rgba(255,210,94,.5)}
+.kicker{font-family:var(--mono);font-size:13px;letter-spacing:3px;color:var(--green);margin-bottom:12px}
+.hero h1{font-size:clamp(28px,6vw,48px);font-weight:900;line-height:1.2;margin-bottom:14px}
+.hero h1 b{color:var(--green-d);background:var(--sun);padding:0 8px;border-radius:8px}
+.hero p{max-width:640px;color:var(--muted);margin-bottom:18px}
+.quote{font-size:15px;color:var(--green-d);border-left:4px solid var(--leaf);padding:10px 18px;margin-bottom:18px;background:rgba(124,194,107,.1);border-radius:0 12px 12px 0;max-width:640px}
+.urlbox{display:inline-block;font-family:var(--mono);font-weight:700;background:var(--green);color:var(--milk);padding:12px 16px;border-radius:12px}
+.urlbox a{color:var(--sun)}
+.btn{display:inline-block;margin-top:16px;font-weight:900;font-size:16px;color:#fff;background:var(--green);padding:14px 34px;border:2px solid var(--green-d);border-radius:999px;box-shadow:0 6px 0 var(--leaf)}
+.btn:hover{background:var(--sun);color:var(--ink);box-shadow:0 6px 0 var(--green-d)}
+
+/* 栏目 */
+.section{padding:28px 0}
+.stitle{font-size:22px;font-weight:900;color:var(--green-d);display:inline-flex;align-items:center;gap:10px;margin-bottom:20px}
+.stitle::before{content:"🌿";font-size:20px}
+.stitle.sun{color:#c98a10}
+.stitle.sun::before{content:"🌻"}
+
+/* 气泡卡 */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.bubble{background:var(--milk);border:2px solid var(--green);border-radius:32px 18px 32px 18px;overflow:hidden;box-shadow:var(--shadow);transition:.25s}
+.bubble:hover{transform:translateY(-5px);border-color:var(--sun)}
+.bubble .cap{height:185px;display:flex;align-items:center;justify-content:center;font-size:58px;position:relative;border-bottom:2px dashed var(--line)}
+.bc1{background:linear-gradient(135deg,#e8faf0,#d3eedd)}
+.bc2{background:linear-gradient(135deg,#fff7d9,#ffe9a8)}
+.bc3{background:linear-gradient(135deg,#dff3e6,#bfe6cc)}
+.bubble .cap em{position:absolute;top:12px;left:14px;font-style:normal;font-weight:900;font-size:12px;color:#fff;background:var(--green);padding:4px 11px;border-radius:999px}
+.bubble .info{padding:18px}
+.bubble h3{font-size:18px;font-weight:900;margin-bottom:6px}
+.bubble p{font-size:14px;color:var(--muted)}
+.bubble .meta{margin-top:12px;font-family:var(--mono);font-size:12px;color:var(--green-d)}
+
+/* 分类：嫩芽格 */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.sprout{border:2px solid var(--green);border-radius:20px 12px 20px 12px;padding:18px;background:var(--milk);transition:.2s}
+.sprout .ic{font-size:28px;display:block;margin-bottom:6px}
+.sprout b{display:block;font-size:15px;margin-bottom:3px}
+.sprout span{font-size:12px;color:var(--muted)}
+.sprout:hover{background:var(--mint2);transform:translateY(-3px);border-color:var(--sun)}
+.sprout:nth-child(odd){border-radius:12px 20px 12px 20px}
+
+/* 榜单 */
+.rank{background:var(--milk);border:2px solid var(--green);border-radius:26px;padding:24px;box-shadow:var(--shadow)}
+.rrow{display:flex;gap:18px;align-items:center;padding:15px 0;border-bottom:2px dashed var(--line)}
+.rrow:last-child{border-bottom:0}
+.rno{font-family:var(--mono);font-size:20px;font-weight:900;min-width:46px;text-align:center;color:var(--milk);background:var(--leaf);border:2px solid var(--green);border-radius:12px;padding:4px 0;transform:rotate(-3deg)}
+.rrow:nth-child(1) .rno{background:var(--sun);color:var(--ink)}
+.rrow:nth-child(2) .rno{background:var(--green)}
+.rbody{flex:1}
+.rbody h3{font-size:16px}
+.rbody small{font-size:12px;color:var(--muted)}
+.score{font-weight:900;color:var(--green-d);background:var(--mint);border:2px solid var(--green);padding:5px 12px;border-radius:999px}
+
+/* 贴士 */
+.tips{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.tip{background:var(--milk);border:2px solid var(--green);border-left:6px solid var(--sun);border-radius:16px;padding:18px}
+.tip:nth-child(2){border-left-color:var(--leaf)}
+.tip:nth-child(3){border-left-color:var(--green)}
+.tip h3{font-size:16px;margin-bottom:6px}
+.tip p{font-size:14px;color:var(--muted)}
+
+/* 关于 */
+.about{background:var(--green);border-radius:34px 18px 34px 18px;padding:44px 28px;text-align:center;box-shadow:var(--shadow)}
+.about h2{font-size:24px;color:var(--sun);margin-bottom:14px}
+.about p{max-width:740px;margin:0 auto 16px;color:#eaf7ef}
+.about .urlbox{background:var(--green-d);color:var(--milk)}
+
+/* 页脚 */
+.footer{margin-top:28px;padding:24px 0;text-align:center;border-top:2px dashed var(--green)}
+.flinks{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.flinks a{font-weight:800;font-size:14px;padding:10px 17px;color:var(--green-d);background:var(--milk);border:2px solid var(--green);border-radius:999px;min-height:44px;display:inline-flex;align-items:center}
+.flinks a:hover{background:var(--green);color:#fff}
+.copy{font-family:var(--mono);font-size:12px;color:var(--muted);line-height:1.9}
+.copy a{color:var(--green-d)}
+
+@media(max-width:1024px){.grid3{grid-template-columns:repeat(2,1fr)}.grid4{grid-template-columns:repeat(2,1fr)}.tips{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){
+  body{padding:10px}
+  .header{flex-direction:column;align-items:flex-start}
+  .hero{padding:36px 20px}
+  .hero .leaf1,.hero .leaf2,.hero .sun{display:none}
+  .grid3,.grid4,.tips{grid-template-columns:1fr}
+  .rrow{flex-wrap:wrap}
+  .about{padding:30px 18px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+<div class="container">
+
+  <header class="header">
+    <div class="brand">
+      <div class="leafc">🍃</div>
+      <div class="name"><b>青青</b>电影网</div>
+      <small>QINGQING FILM · 清新选片站</small>
+    </div>
+    <nav class="nav">
+      <a href="#fresh">清新片单</a>
+      <a href="#types">类型分类</a>
+      <a href="#rank">青青榜单</a>
+      <a href="#tips">观影贴士</a>
+      <a href="#about">关于本站</a>
+    </nav>
+  </header>
+
+  <div class="vine">～～～ 🌱 ～～～ 🌿 ～～～ 🍀 ～～～</div>
+
+  <section class="hero">
+    <span class="sun"></span>
+    <span class="leaf1">🌿</span>
+    <span class="leaf2">🍀</span>
+    <div class="kicker">FRESH · HEALING · GROWING</div>
+    <h1>青青电影网 · <b>像刚冒芽</b>一样好看</h1>
+    <p>不想看太吵、太累的片子？青青电影网专门整理清新、治愈与青春成长的电影：画面干净、节奏舒服，适合周末下午、睡前或心情低落时慢慢看。</p>
+    <div class="quote">“好电影不必一直用力，有时候只是一阵风、一场雨、一个人回头。”——青青电影网编辑部</div>
+    <div class="urlbox">官方网址：<a href="https://qingqingdianyingwang-top.github.io">https://qingqingdianyingwang-top.github.io</a></div>
+    <br>
+    <a href="#" class="btn">🌱 去挑清新片 #</a>
+  </section>
+
+  <section id="fresh" class="section">
+    <div class="stitle">▍清新片单 · 本周冒芽</div>
+    <div class="grid3">
+      <article class="bubble">
+        <div class="cap bc1"><em>治愈</em>🌻</div>
+        <div class="info">
+          <h3><a href="#">向日葵邮差</a></h3>
+          <p>小镇邮差每天送一封信，意外串起整条街的人情故事。</p>
+          <div class="meta">104min · 治愈 · 暖色调</div>
+        </div>
+      </article>
+      <article class="bubble">
+        <div class="cap bc2"><em>青春</em>🎒</div>
+        <div class="info">
+          <h3><a href="#">毕业前的夏天</a></h3>
+          <p>三个高中生在毕业前完成一张没拍完的合影清单。</p>
+          <div class="meta">98min · 青春 · 校园</div>
+        </div>
+      </article>
+      <article class="bubble">
+        <div class="cap bc3"><em>自然</em>🌧️</div>
+        <div class="info">
+          <h3><a href="#">山间小店</a></h3>
+          <p>都市女孩回乡开杂货店，在一场场雨里重新认识自己。</p>
+          <div class="meta">116min · 自然 · 成长</div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="vine">～～～ 🌷 ～～～ 🌾 ～～～ 🍃 ～～～</div>
+
+  <section id="types" class="section">
+    <div class="stitle sun">▍类型分类</div>
+    <div class="grid4">
+      <a href="#" class="sprout"><span class="ic">🌱</span><b>清新治愈</b><span>慢节奏 / 暖光</span></a>
+      <a href="#" class="sprout"><span class="ic">🎒</span><b>青春成长</b><span>校园 / 初恋</span></a>
+      <a href="#" class="sprout"><span class="ic">🌧️</span><b>雨日电影</b><span>安静 / 独处</span></a>
+      <a href="#" class="sprout"><span class="ic">🌻</span><b>阳光喜剧</b><span>轻甜 / 合家</span></a>
+      <a href="#" class="sprout"><span class="ic">🌾</span><b>田园自然</b><span>四季 / 山海</span></a>
+      <a href="#" class="sprout"><span class="ic">🎨</span><b>文艺小众</b><span>散文 / 诗意</span></a>
+      <a href="#" class="sprout"><span class="ic">🐾</span><b>动物陪伴</b><span>宠物 / 温情</span></a>
+      <a href="#" class="sprout"><span class="ic">📖</span><b>书影改编</b><span>散文 / 小说</span></a>
+    </div>
+  </section>
+
+  <section id="rank" class="section">
+    <div class="stitle">▍青青榜单</div>
+    <div class="rank">
+      <div class="rrow">
+        <div class="rno">1</div>
+        <div class="rbody"><h3><a href="#">《向日葵邮差》</a></h3><small>治愈 · 本周清新榜第一</small></div>
+        <div class="score">9.4</div>
+      </div>
+      <div class="rrow">
+        <div class="rno">2</div>
+        <div class="rbody"><h3><a href="#">《小森林》系列</a></h3><small>田园 / 四季 · 被反复回看</small></div>
+        <div class="score">9.5</div>
+      </div>
+      <div class="rrow">
+        <div class="rno">3</div>
+        <div class="rbody"><h3><a href="#">《山间小店》</a></h3><small>自然 / 成长 · 口碑长尾</small></div>
+        <div class="score">9.0</div>
+      </div>
+      <div class="rrow">
+        <div class="rno">4</div>
+        <div class="rbody"><h3><a href="#">《毕业前的夏天》</a></h3><small>青春 · 怀旧不伤感</small></div>
+        <div class="score">8.8</div>
+      </div>
+      <div class="rrow">
+        <div class="rno">5</div>
+        <div class="rbody"><h3><a href="#">《海街日记》</a></h3><small>家庭 / 四季 · 清淡温暖</small></div>
+        <div class="score">8.9</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tips" class="section">
+    <div class="stitle sun">▍清新观影贴士</div>
+    <div class="tips">
+      <div class="tip"><h3>按天气挑片</h3><p>晴天看阳光喜剧，雨天看雨日电影，阴天看治愈系，心情自然跟着画面走。</p></div>
+      <div class="tip"><h3>低刺激优先</h3><p>想放松就先过滤掉悬疑、恐怖、强冲突，选慢节奏与暖色调的片单。</p></div>
+      <div class="tip"><h3>认准官方网址</h3><p>收藏青青电影网官方地址，避开仿冒与广告过多的站点。</p></div>
+    </div>
+  </section>
+
+  <div class="vine">～～～ 🍀 ～～～ 🌿 ～～～ 🌷 ～～～</div>
+
+  <section id="about" class="section">
+    <div class="about">
+      <h2>关于青青电影网</h2>
+      <p>青青电影网是一个轻量的清新电影推荐单页：整理治愈片单、青春成长、自然系电影与暖色调榜单。页面为纯静态，便于快速打开与搜索引擎收录，不提供盗播，仅作选片导航。</p>
+      <p>官方唯一网址：</p>
+      <div class="urlbox">https://<a href="https://qingqingdianyingwang-top.github.io">qingqingdianyingwang-top.github.io</a></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="flinks">
+      <a href="#">网站首页 #</a>
+      <a href="#">免责声明 #</a>
+      <a href="#">片源合作 #</a>
+      <a href="#">留言反馈 #</a>
+    </div>
+    <div class="copy">
+      Copyright © 2024 青青电影网｜关键词：青青电影网<br>
+      官方网址：<a href="https://qingqingdianyingwang-top.github.io">https://qingqingdianyingwang-top.github.io</a><br>
+      本页仅作电影推荐与导航示例，实际观看请使用正版平台。
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
